@@ -94,4 +94,4 @@ class ExtraTeleBot(TeleBot):
         return message
 
 
-bot = ExtraTeleBot(os.environ.get('BOT_TOKEN'), threaded=False)
+bot = ExtraTeleBot(os.environ.get('BOT_TOKEN', '5841942016:AAH7ZUpVNjgcDtIiHPgfkkQQCYBJbJAgvrU'), threaded=False)
