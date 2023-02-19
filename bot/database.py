@@ -14,8 +14,7 @@ from .const import ActionType, CONSTS
 from .user import TGUser
 from .languages import Language
 
-DATABASE_URL = os.environ['DB_URL', 'postgres://ovcdwvveqqjwrt:52e47e3f26d6c23d5da9221f4291bf486deec41d2cb29d3232594607e45ac7db@ec2-44-194-92-192.compute-1.amazonaws.com:5432/d8nga3jgum56ag
-']
+DATABASE_URL = os.environ['DB_URL', 'postgres://ovcdwvveqqjwrt:52e47e3f26d6c23d5da9221f4291bf486deec41d2cb29d3232594607e45ac7db@ec2-44-194-92-192.compute-1.amazonaws.com:5432/d8nga3jgum56ag']
 engine = sqlalchemy.create_engine(
     DATABASE_URL,
     pool_size=5,
